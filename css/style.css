@@ -110,6 +110,12 @@ footer a:hover {
 }
 
 
+@media only screen and (max-width: 768px){
+    .texto-servicios {
+        color: yellow;
+    }
+}
+
 /* PAGINA DE UBICACION */
 
 .ubication {
@@ -124,6 +130,13 @@ footer a:hover {
 
 .map {
     text-align: center;
+}
+
+@media only screen and (max-width: 768px){   
+    .ubication {
+        background-color: rgb(17, 5, 5);
+        color: yellow;
+    }
 }
 
 /* PAGINA DE CONTACTO */
