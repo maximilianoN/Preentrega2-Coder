@@ -108,3 +108,51 @@ footer a:hover {
     font-size: 24px;
     color: aliceblue;
 }
+
+
+/* PAGINA DE UBICACION */
+
+.ubication {
+    background-color: rgb(226, 226, 173);
+    text-align: center;
+    border: solid 10px black;
+    color: black;
+    font-size: 36px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.map {
+    text-align: center;
+}
+
+/* PAGINA DE CONTACTO */
+
+.formulario {
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    background-color:rgb(226, 226, 173);
+    color:black;
+}
+
+.subtitulo-contacto {
+    text-align: center;
+    color: aliceblue;
+}
+
+p {
+    color:aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+}
