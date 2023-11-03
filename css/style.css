@@ -55,7 +55,7 @@ li a:hover {
 .articulos {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .articulos article {
@@ -68,8 +68,8 @@ li a:hover {
 }
 
 .articulos article p {
+    flex-direction: column;
     font-size: 20px;
-    text-align: center;
     color: aliceblue;
 }
 
