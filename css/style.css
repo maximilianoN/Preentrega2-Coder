@@ -1,3 +1,81 @@
+body {
+  background-image: url(/images/fondo.png);
+}
 
+/* PAGINA INICIO */
+header {
+  background-image: linear-gradient(to top, rgb(43, 11, 11), rgb(255, 188, 101));
+  height: 150px;
+  border-radius: 5px;
+}
+header h1 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+}
+
+nav .lista {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+nav .lista li {
+  display: inline;
+  margin-right: 10px;
+  font-size: 22px;
+}
+nav .lista li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+nav .lista li a:hover {
+  color: rgb(255, 188, 101);
+}
+
+div .subtitulo {
+  text-align: center;
+}
+div .parrafo {
+  text-align: center;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articulos article {
+  background-image: linear-gradient(to top, rgb(226, 226, 173), rgb(255, 188, 101));
+  border: 2px solid rgb(255, 188, 101);
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.articulos article p {
+  flex-direction: column;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  background-image: linear-gradient(to top, rgb(43, 11, 11), rgb(255, 188, 101));
+  text-align: center;
+}
+footer p {
+  font-size: 22px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+footer a {
+  letter-spacing: 20px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin: auto;
+}
+footer a:hover {
+  color: rgb(255, 188, 101);
+}
 
 /*# sourceMappingURL=style.css.map */

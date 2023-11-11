@@ -1,4 +1,88 @@
+// COLORES
 $color1:rgb(226, 226, 173);
 $color2:rgb(255, 188, 101);
-$color3:rgb(17, 5, 5);
-$color4: rgb(255, 255, 255);
+$color3:rgb(43, 11, 11);
+$color4:rgb(255, 255, 255);
+$color5:rgb(0, 0, 0);
+
+
+body {
+    background-image: url(/images/fondo.png);
+}
+
+/* PAGINA INICIO */
+
+header {
+    background-image: linear-gradient(to top, $color3, $color2);
+    height: 150px;
+    border-radius: 5px;
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        color:$color5;
+    }
+}
+nav {
+    .lista {
+        list-style: none;
+        padding: 0px;
+        text-align: center;
+        li {
+            display: inline;
+            margin-right: 10px;
+            font-size: 22px;
+            a {
+                text-decoration: none;
+                color: $color5;
+            }
+            a:hover {
+            color:$color2;
+            }
+        }
+    }
+}
+div {
+    .subtitulo {
+        text-align: center;
+    }
+    .parrafo {
+        text-align: center;
+    }
+}
+.articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    article {
+        background-image: linear-gradient(to top, $color1, $color2);
+        border: 2px solid $color2;
+        margin: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        p {
+            flex-direction: column;
+            font-size: 20px;
+            color: $color5;
+        }
+    }
+}
+footer {
+    background-image: linear-gradient(to top, $color3, $color2);
+    text-align: center;
+    p{
+        font-size: 22px;
+        text-align: center;
+        color: rgb(0, 0, 0)
+    }
+    a {
+    letter-spacing: 20px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    }
+    a:hover {
+    color:$color2;
+    }
+}
