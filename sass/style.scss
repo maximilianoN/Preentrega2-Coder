@@ -1,10 +1,22 @@
+// ALTURA
+$alturaheader: 150px;
+
+// ANCHO
+$mediaquerieswidth: 768px;
+
 // COLORES
 $color1:rgb(226, 226, 173);
 $color2:rgb(255, 188, 101);
 $color3:rgb(43, 11, 11);
 $color4:rgb(255, 255, 255);
 $color5:rgb(0, 0, 0);
+$color6:yellow;
 
+// TAMAÑOTEXTO
+$fontsizeh1:60px;
+$fontsize1:24px;
+$fontsize2:22px;
+$fontsize3:20px;
 
 body {
     background-image: url(/images/fondo.png);
@@ -14,11 +26,11 @@ body {
 
 header {
     background-image: linear-gradient(to top, $color3, $color2);
-    height: 150px;
+    height: $alturaheader;
     border-radius: 5px;
     h1 {
         text-align: center;
-        font-size: 60px;
+        font-size: $fontsizeh1;
         color:$color5;
     }
 }
@@ -30,7 +42,7 @@ nav {
         li {
             display: inline;
             margin-right: 10px;
-            font-size: 22px;
+            font-size: $fontsize2;
             a {
                 text-decoration: none;
                 color: $color5;
@@ -47,6 +59,8 @@ div {
     }
     .parrafo {
         text-align: center;
+        font-size: $fontsize2;
+        color: $color3;
     }
 }
 .articulos {
@@ -63,7 +77,7 @@ div {
         text-align: center;
         p {
             flex-direction: column;
-            font-size: 20px;
+            font-size: $fontsize3;
             color: $color5;
         }
     }
@@ -72,7 +86,7 @@ footer {
     background-image: linear-gradient(to top, $color3, $color2);
     text-align: center;
     p{
-        font-size: 22px;
+        font-size: $fontsize2;
         text-align: center;
         color: rgb(0, 0, 0)
     }
@@ -84,5 +98,66 @@ footer {
     }
     a:hover {
     color:$color2;
+    }
+}
+/* PAGINA SOBRE NOSOTROS */
+
+.texto-carrusel {
+    font-size: $fontsize1;
+    color: $color4;
+}
+/* PAGINA DE SERVICIOS */
+
+.texto-servicios {
+    font-size: $fontsize1;
+    color: $color3;
+    background-image: linear-gradient(to top, $color1, $color2);
+    margin: 20px;
+    padding: 10px;
+}
+@media only screen and (max-width: $mediaquerieswidth){
+    .texto-servicios {
+        color: $color6;
+    }
+}
+/* PAGINA DE UBICACION */
+
+.ubication {
+    background-image: linear-gradient(to top, $color1, $color2);
+    text-align: center;
+    color: $color3;
+    font-size: $fontsize1;
+    border-radius: 5px;
+    margin: 5px;
+}
+.map {
+    text-align: center;
+}
+/* PAGINA DE CONTACTO */
+
+.formulario {
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+    border: 5px solid $color2;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, $color1, $color2);
+    color:$color3;
+}
+.subtitulo-contacto {
+    text-align: center;
+    color: $color3;
+}
+
+p {
+    color:$color3;
+    font-size: 26px;
+    text-align: center;
+}
+.campo {
+    margin-bottom: 15px;
+    label {
+    display: block;
+    font-weight: bold;
     }
 }

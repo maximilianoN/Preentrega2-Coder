@@ -37,6 +37,8 @@ div .subtitulo {
 }
 div .parrafo {
   text-align: center;
+  font-size: 22px;
+  color: rgb(43, 11, 11);
 }
 
 .articulos {
@@ -76,6 +78,70 @@ footer a {
 }
 footer a:hover {
   color: rgb(255, 188, 101);
+}
+
+/* PAGINA SOBRE NOSOTROS */
+.texto-carrusel {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+/* PAGINA DE SERVICIOS */
+.texto-servicios {
+  font-size: 24px;
+  color: rgb(43, 11, 11);
+  background-image: linear-gradient(to top, rgb(226, 226, 173), rgb(255, 188, 101));
+  margin: 20px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .texto-servicios {
+    color: yellow;
+  }
+}
+/* PAGINA DE UBICACION */
+.ubication {
+  background-image: linear-gradient(to top, rgb(226, 226, 173), rgb(255, 188, 101));
+  text-align: center;
+  color: rgb(43, 11, 11);
+  font-size: 24px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.map {
+  text-align: center;
+}
+
+/* PAGINA DE CONTACTO */
+.formulario {
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
+  border: 5px solid rgb(255, 188, 101);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, rgb(226, 226, 173), rgb(255, 188, 101));
+  color: rgb(43, 11, 11);
+}
+
+.subtitulo-contacto {
+  text-align: center;
+  color: rgb(43, 11, 11);
+}
+
+p {
+  color: rgb(43, 11, 11);
+  font-size: 26px;
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+.campo label {
+  display: block;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
