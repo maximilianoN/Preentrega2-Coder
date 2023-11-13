@@ -4,6 +4,10 @@ $alturaheader: 150px;
 // ANCHO
 $mediaquerieswidth: 768px;
 
+// FONTS
+$font1: serif;
+$font2: sans-serif;
+
 // COLORES
 $color1:rgb(226, 226, 173);
 $color2:rgb(255, 188, 101);
@@ -61,6 +65,7 @@ div {
         text-align: center;
         font-size: $fontsize2;
         color: $color3;
+        font-family: $font2;
     }
 }
 .articulos {
@@ -79,6 +84,7 @@ div {
             flex-direction: column;
             font-size: $fontsize3;
             color: $color5;
+            font-family: $font2;
         }
     }
 }
@@ -105,16 +111,33 @@ footer {
 .texto-carrusel {
     font-size: $fontsize1;
     color: $color4;
+    font-family: $font1;
 }
 /* PAGINA DE SERVICIOS */
 
 .texto-servicios {
     font-size: $fontsize1;
+    font-family: $font1;
     color: $color3;
     background-image: linear-gradient(to top, $color1, $color2);
     margin: 20px;
     padding: 10px;
 }
+
+.cont-gold
+.cont-goldenrod
+.cont-sienna {     
+}
+
+@each $colores in goldenrod, sienna, gold {
+    .cont-#{$colores} {
+        border-color: $colores;
+        text-align: center;
+        color: $colores;
+        font-size: $fontsize1;
+    }
+}
+
 @media only screen and (max-width: $mediaquerieswidth){
     .texto-servicios {
         color: $color6;
@@ -127,6 +150,7 @@ footer {
     text-align: center;
     color: $color3;
     font-size: $fontsize1;
+    font-family: $font2;
     border-radius: 5px;
     margin: 5px;
 }
@@ -143,16 +167,19 @@ footer {
     border-radius: 5px;
     background-image: linear-gradient(to top, $color1, $color2);
     color:$color3;
+    font-family: $font2;
 }
 .subtitulo-contacto {
     text-align: center;
     color: $color3;
+    font-family: $font1;
 }
 
 p {
     color:$color3;
     font-size: 26px;
     text-align: center;
+    font-family: $font1;
 }
 .campo {
     margin-bottom: 15px;
