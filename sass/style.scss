@@ -74,7 +74,7 @@ div {
     align-items: center;
     article {
         background-image: linear-gradient(to top, $color1, $color2);
-        border: 2px solid $color2;
+        border: 2px solid $color3;
         margin: 5px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -138,6 +138,12 @@ footer {
     }
 }
 
+.parrafo-servicios {
+    font-size: $fontsize2;
+    color: $color3;
+    font-family: $font1;
+}
+
 @media only screen and (max-width: $mediaquerieswidth){
     .texto-servicios {
         color: $color6;
@@ -157,6 +163,33 @@ footer {
 .map {
     text-align: center;
 }
+.box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20%;
+    .box1 {
+        border: 5px solid $color2;
+        margin: 10px;
+        margin-right:10px;
+    }
+    .box2 {
+        border: 5px solid $color2;
+    }
+}
+@mixin tamaño ($height, $width,$bradius) {
+    height: $height;
+    width: $width;
+    border-radius:$bradius;
+}
+.box1 {
+    @include tamaño(350px,500px ,10px);
+}
+.box2 {
+    @include tamaño(350px,500px ,10px )
+}
+
+
 /* PAGINA DE CONTACTO */
 
 .formulario {
