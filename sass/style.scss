@@ -166,12 +166,9 @@ footer {
 .box {
     display: flex;
     align-items: center;
-    padding: 10px;
-    padding-left: 20%;
+    padding-left: 25%;
     .box1 {
         border: 5px solid $color2;
-        margin: 10px;
-        margin-right:10px;
     }
     .box2 {
         border: 5px solid $color2;
@@ -183,10 +180,10 @@ footer {
     border-radius:$bradius;
 }
 .box1 {
-    @include tamaño(350px,500px ,10px);
+    @include tamaño(400px,420px ,10px);
 }
 .box2 {
-    @include tamaño(350px,500px ,10px )
+    @include tamaño(400px,420px ,10px )
 }
 
 

@@ -149,27 +149,24 @@ footer a:hover {
 .box {
   display: flex;
   align-items: center;
-  padding: 10px;
-  padding-left: 20%;
+  padding-left: 25%;
 }
 .box .box1 {
   border: 5px solid rgb(255, 188, 101);
-  margin: 10px;
-  margin-right: 10px;
 }
 .box .box2 {
   border: 5px solid rgb(255, 188, 101);
 }
 
 .box1 {
-  height: 350px;
-  width: 500px;
+  height: 400px;
+  width: 420px;
   border-radius: 10px;
 }
 
 .box2 {
-  height: 350px;
-  width: 500px;
+  height: 400px;
+  width: 420px;
   border-radius: 10px;
 }
 
